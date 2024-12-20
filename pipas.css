@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, yellow, green);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.button {
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 20px 0px ;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid;
+    padding: 8px 20px;
+    box-shadow: 3px 6px green;
+    font-family: sans-serif;
+    margin: 100px;
+}
+
+.button:hover {
+    background-color: green;
+    transform: translateY(-1px);
+    border: 1px solid;
+    padding: 8px 20px;
+    box-shadow: 3px 6px white;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #2575fc;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4f9af2;
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 20px;
+    display: none;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 22px;
+    color: #00796b;
+    font-weight: bold;
+}
+
+.co2-info {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.co2-info h2 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.co2-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.co2-info li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 5px 0;
+}
+
+.co2-info li strong {
+    color: #4CAF50;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .co2-info {
+        margin-top: 20px;
+    }
+}

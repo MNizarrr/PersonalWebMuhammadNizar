@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jejak Emisi Karbon Komputer</title>
+    <link rel="stylesheet" href="pipas.css">
+</head>
+<body>
+    <header>
+        <div class="button">
+            <p style="font-family: Georgia; text-align: center; font-size: 20px;"><a href="index.html">Pulang Ke Beranda ↩</a></p>
+        </div>
+        <div class="button">
+            <p style="font-family: Georgia; text-align: center; font-size: 20px;"><a href="pipasartikel.html">Artikel Kenakalan Remaja↪</a></p>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Menghitung Jejak Emisi Karbon</br>Pada Komputer</h1>
+
+        <form id="carbonForm">
+            <div class="input-group">
+                <label for="powerUsage">Daya Komputer (Watt):</label>
+                <input type="number" id="powerUsage" placeholder="Contoh: 300" required>
+            </div>
+
+            <div class="input-group">
+                <label for="hours">Waktu Penggunaan (Jam per Hari):</label>
+                <input type="number" id="hours" placeholder="Contoh: 5" required>
+            </div>
+
+            <div class="input-group">
+                <label for="energySource">Sumber Energi:</label>
+                <select id="energySource">
+                    <option value="coal">Batu Bara</option>
+                    <option value="naturalGas">Gas Alam</option>
+                    <option value="renewable">Energi Terbarukan</option>
+                </select>
+            </div>
+
+            <button type="submit">Hitung Jejak Emisi</button>
+        </form>
+
+        <div id="result" class="result">
+            <h3>Hasil Jejak Emisi Karbon:</h3>
+            <p id="carbonOutput"></p>
+        </div>
+
+        <div id="co2Info" class="co2-info">
+            <h2>Sumber Energi & Emisi CO2</h2>
+            <ul>
+                <li><strong>Batu Bara</strong>: 820 gram CO2 per kWh. Sumber energi fosil yang memiliki emisi karbon tertinggi.</li>
+                <li><strong>Gas Alam</strong>: 450 gram CO2 per kWh. Lebih bersih dibandingkan batu bara, tetapi tetap menghasilkan emisi CO2.</li>
+                <strong><li><strong>Energi Terbarukan</strong>: 0 gram CO2 per kWh. Tidak menghasilkan emisi karbon jika digunakan.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="pipas.js"></script>
+</body>
+</html>
